@@ -1,1 +1,1 @@
-![alt text](catfact.gif)
+![alt text](catfact.gif =250x)
