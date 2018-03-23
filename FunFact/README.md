@@ -1,1 +1,1 @@
-![alt text](catfact.gif =250x)
+<img src="catfact.gif" alt="Drawing" style="width: 200px;"/>
