@@ -17,16 +17,29 @@
         android:textColor="@color/trans_white"
         android:textSize="24sp" />
 
-    <TextView
-        android:id="@+id/factTextView"
+    <ProgressBar
+        android:id="@+id/progressBar"
         android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:indeterminate="true"
+        android:layout_centerVertical="true"
+        android:visibility="gone" />
+
+    <ScrollView
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
-        android:layout_centerVertical="true"
-        android:text="Ants stretch while waking up in morning"
-        android:textColor="@android:color/white"
-        android:textSize="24sp" />
+        android:layout_centerVertical="true">
+        <TextView
+            android:id="@+id/factTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Ants stretch while waking up in morning"
+            android:textColor="@android:color/white"
+            android:textSize="24sp" />
+    </ScrollView>
+
 
     <Button
         android:id="@+id/showFactButton"
