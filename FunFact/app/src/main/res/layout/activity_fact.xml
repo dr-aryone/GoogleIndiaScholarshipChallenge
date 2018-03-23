@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/relativeView"
     android:layout_width="match_parent"
@@ -13,7 +12,7 @@
         android:id="@+id/textView2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Did you know?"
+        android:text="@string/diy"
         android:textColor="@color/trans_white"
         android:textSize="24sp" />
 
@@ -35,7 +34,7 @@
             android:id="@+id/factTextView"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Ants stretch while waking up in morning"
+            android:text="@string/catFact"
             android:textColor="@android:color/white"
             android:textSize="24sp" />
     </ScrollView>
@@ -48,7 +47,7 @@
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
         android:background="@android:color/white"
-        android:text="Show another fun fact"
+        android:text="@string/anotherFact"
         android:textColor="@color/tree_green"/>
 
 </RelativeLayout>

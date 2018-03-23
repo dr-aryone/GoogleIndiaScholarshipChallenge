@@ -1,3 +1,6 @@
 <resources>
     <string name="app_name">FunFact</string>
+    <string name="diy">Did you know?</string>
+    <string name="catFact">Cats can’t see directly below their noses.</string>
+    <string name="anotherFact">Show another fun fact</string>
 </resources>
