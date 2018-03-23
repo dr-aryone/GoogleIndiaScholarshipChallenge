@@ -1,1 +1,1 @@
-<img src="catfact.gif" alt="Drawing" style="width: 200px;"/>
+<img src="catfact.gif" alt="Drawing" width=300/>
