@@ -12,23 +12,24 @@ import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
 
+    // Variable for storing score
     int score;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-
-
     }
 
 
     public void show_result(View view) {
 
+        // Variables for views and resource
         EditText name = (EditText) findViewById(R.id.user);
         String user = String.valueOf(name.getText());
         Resources resources = getResources();
 
+        // Answer checking starts here
         RadioButton r1 = (RadioButton) findViewById(R.id.q1);
         if (r1.isChecked()) {
             score++;
@@ -54,7 +55,6 @@ public class MainActivity extends AppCompatActivity {
             score++;
         }
 
-
         CheckBox c1 = (CheckBox) findViewById(R.id.ch1);
         CheckBox c2 = (CheckBox) findViewById(R.id.ch2);
         CheckBox c3 = (CheckBox) findViewById(R.id.ch3);
@@ -68,6 +68,7 @@ public class MainActivity extends AppCompatActivity {
             score++;
         }
 
+        // Conditions for giving feedback in toast
         if (score == 6) {
             Toast.makeText(MainActivity.this, resources.getString(R.string.awesome)
                     + user + resources.getString(R.string.all_correct), Toast.LENGTH_LONG).show();
