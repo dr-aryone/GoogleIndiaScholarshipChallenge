@@ -64,9 +64,7 @@ public class FactActivity extends AppCompatActivity {
                     factTextView.setText(factBook.getFact());
                     Toast.makeText(FactActivity.this, "Pease connect with internet to get more cat facts", Toast.LENGTH_SHORT).show();
                 }
-                int colour = colorWheel.getColors();
-                showFactButton.setTextColor(colour);
-                relativeLayout.setBackgroundColor(colour);
+
             }
         };
         showFactButton.setOnClickListener(listener);
@@ -120,6 +118,9 @@ public class FactActivity extends AppCompatActivity {
                 response = "THERE WAS AN ERROR";
             }
             progressBar.setVisibility(View.GONE);
+            int colour = colorWheel.getColors();
+            showFactButton.setTextColor(colour);
+            relativeLayout.setBackgroundColor(colour);
 //            Log.e("INFO", response);
 
             try {
